@@ -41,11 +41,19 @@ for(let member of members){
    console.log(member);
    // milestone2 e bonus1
    output.innerHTML+=`
-   <li>
-      <p>Name: ${member.completeName} - Role: ${member.role} - <img src="${member.img}" title="${member.completeName}" alt="${member.completeName}"> </p>
-   </li>
+   <div class="col mb-4">
+      <div class="card my_card" style="width: 18rem;">
+      <img src="${member.img}" title="${member.completeName}" alt="${member.completeName}">
+        <div class="card-body">
+         <h4>${member.completeName}</h4>
+         <p>${member.role}</p>
+        </div>
+      </div>
+    </div>
    `
 }
 
 console.log(members[3].completeName)
 
+
+// Name: ${member.completeName} - Role: ${member.role} - <img src="${member.img}" title="${member.completeName}" alt="${member.completeName}"> 
