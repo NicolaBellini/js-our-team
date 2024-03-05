@@ -32,7 +32,10 @@ const members = [
    },
 ]
 
-
+// milestone1
+for(let member of members){
+   console.log(member);
+}
 
 console.log(members[3].completeName)
 
