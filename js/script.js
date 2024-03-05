@@ -1,3 +1,7 @@
+// elemnts
+const output = document.querySelector(".output")
+
+
 
 const members = [
    {
@@ -35,6 +39,12 @@ const members = [
 // milestone1
 for(let member of members){
    console.log(member);
+   // milestone2
+   output.innerHTML+=`
+   <li>
+      <p>Name: ${member.completeName} - Role: ${member.role} - img:${member.img} </p>
+   </li>
+   `
 }
 
 console.log(members[3].completeName)
